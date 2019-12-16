@@ -1,0 +1,49 @@
+﻿<Window x:Class="TicTacToeGraphics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeGraphics"
+        mc:Ignorable="d"
+        Title="TicTacToe" Height="620" Width="800" ResizeMode="NoResize">
+
+    <Canvas x:Name="Canvas1" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" Background="Transparent">
+        <Line
+            X1="200" Y1="0"
+            X2="200" Y2="600"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Line
+            X1="1" Y1="0"
+            X2="1" Y2="600"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Line
+            X1="400" Y1="0"
+            X2="400" Y2="600"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Line
+            X1="600" Y1="0"
+            X2="600" Y2="600"
+            Stroke="Black"
+            StrokeThickness="4" />
+
+        <Line
+            X1="0" Y1="200"
+            X2="600" Y2="200"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Line
+            X1="0" Y1="400"
+            X2="600" Y2="400"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Line
+            X1="600" Y1="0"
+            X2="600" Y2="600"
+            Stroke="Black"
+            StrokeThickness="4" />
+        <Button x:Name="Backup" Content="BackUp" Canvas.Left="602" Width="193" Height="200" Click="Button_Click" Background="White"/>
+        </Canvas>
+</Window>
